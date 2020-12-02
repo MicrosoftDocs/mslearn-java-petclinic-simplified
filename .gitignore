@@ -21,3 +21,4 @@ _site/
 *.tfstate.backup
 *.tfstate.lock.info
 .DS_Store
+.vscode/settings.json

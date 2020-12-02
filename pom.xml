@@ -115,10 +115,10 @@
         <groupId>com.microsoft.azure</groupId>  
         <artifactId>azure-webapp-maven-plugin</artifactId>  
         <version>1.8.0</version>  
-        <configuration> 
+        <configuration>
           <schemaVersion>V2</schemaVersion>  
-          <resourceGroup>spring-petclinicrpza</resourceGroup>  
-          <appName>spring-petclinic-apprpza</appName>  
+          <resourceGroup>spring-petclinic</resourceGroup>  
+          <appName>spring-petclinic-app</appName>  
           <deployment> 
             <resources> 
               <resource> 
