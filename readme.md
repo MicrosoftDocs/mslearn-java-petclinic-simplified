@@ -1,4 +1,4 @@
-# Spring PetClinic Sample Application
+# Spring PetClinic with GitHub Actions on Azure
 
 ## Deploying to Azure
 
