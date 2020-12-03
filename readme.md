@@ -30,7 +30,7 @@ the ones configured in Terraform).
 Then, deploy the application by running:
 
 ```bash
-./mvnw azure-webapp:deploy
+./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
 ```
 
 ## Use GitHub Actions
