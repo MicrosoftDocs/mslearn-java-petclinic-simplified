@@ -1,11 +1,11 @@
 variable "resource_group" {
   description = "The resource group"
-  default = "spring-petclinicrpza"
+  default = "spring-petclinic"
 }
 
 variable "application_name" {
   description = "The Spring Boot application name"
-  default     = "spring-petclinic-apprpza"
+  default     = "spring-petclinic-app"
 }
 
 variable "location" {
