@@ -81,7 +81,7 @@ resource "azurerm_app_service" "main" {
 
   site_config {
     always_on        = true
-    linux_fx_version = "JAVA|11-java11"
+    linux_fx_version = "JAVA|8-jre8"
   }
 
   app_settings = {
