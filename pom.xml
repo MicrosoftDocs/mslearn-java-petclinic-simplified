@@ -20,7 +20,7 @@
     <webjars-bootstrap.version>3.3.6</webjars-bootstrap.version>  
     <webjars-jquery-ui.version>1.11.4</webjars-jquery-ui.version>  
     <webjars-jquery.version>2.2.4</webjars-jquery.version>  
-    <wro4j.version>1.9.0</wro4j.version>  
+    <wro4j.version>1.10.1</wro4j.version>  
     <jacoco.version>0.8.5</jacoco.version>  
     <nohttp-checkstyle.version>0.0.4.RELEASE</nohttp-checkstyle.version>  
     <spring-format.version>0.0.25</spring-format.version> 
@@ -115,7 +115,7 @@
         <groupId>com.microsoft.azure</groupId>  
         <artifactId>azure-webapp-maven-plugin</artifactId>  
         <version>1.8.0</version>  
-        <configuration>
+        <configuration> 
           <schemaVersion>V2</schemaVersion>  
           <resourceGroup>spring-petclinic</resourceGroup>  
           <appName>spring-petclinic-app</appName>  
@@ -129,7 +129,8 @@
               </resource> 
             </resources> 
           </deployment>  
-          <region>westeurope</region>
+          <region>westeurope</region>  
+          <pricingTier>P1v2</pricingTier> 
         </configuration> 
       </plugin>  
       <plugin> 
