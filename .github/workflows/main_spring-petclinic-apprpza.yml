@@ -28,5 +28,5 @@ jobs:
       with:
         app-name: 'spring-petclinic-apprpza'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_e4c64006c5204a7a8cc7c30bdfddadce }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_c1ee8d191003493b9c9e13a9b78ad2c3 }}
         package: '${{ github.workspace }}/target/*.jar'
