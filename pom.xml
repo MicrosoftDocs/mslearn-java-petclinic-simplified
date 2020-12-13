@@ -202,8 +202,8 @@
               <additionalProperties> 
                 <encoding.source>${project.build.sourceEncoding}</encoding.source>  
                 <encoding.reporting>${project.reporting.outputEncoding}</encoding.reporting>  
-                <java.source>${maven.compiler.source}</java.source>  
-                <java.target>${maven.compiler.target}</java.target> 
+                <java.source>1.8</java.source>  
+                <java.target>1.8</java.target> 
               </additionalProperties> 
             </configuration> 
           </execution> 
