@@ -18,7 +18,7 @@ jobs:
     - name: Set up Java version
       uses: actions/setup-java@v1
       with:
-        java-version: '8.0.232'
+        java-version: '8.0.275'
 
     - name: Build with Maven
       run: mvn clean install
