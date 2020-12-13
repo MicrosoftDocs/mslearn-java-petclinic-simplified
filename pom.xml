@@ -21,7 +21,7 @@
     <webjars-jquery-ui.version>1.11.4</webjars-jquery-ui.version>  
     <webjars-jquery.version>2.2.4</webjars-jquery.version>  
     <wro4j.version>1.10.1</wro4j.version>  
-    <jacoco.version>0.8.5</jacoco.version>  
+    <jacoco.version>0.8.6</jacoco.version>  
     <nohttp-checkstyle.version>0.0.4.RELEASE</nohttp-checkstyle.version>  
     <spring-format.version>0.0.25</spring-format.version> 
   </properties>  
@@ -263,7 +263,7 @@
           <dependency> 
             <groupId>org.webjars</groupId>  
             <artifactId>bootstrap</artifactId>  
-            <version>${webjars-bootstrap.version}</version> 
+            <version>4.5.3</version> 
           </dependency>  
         <dependency>
             <groupId>org.mockito</groupId>
