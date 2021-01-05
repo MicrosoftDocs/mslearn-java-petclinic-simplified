@@ -110,7 +110,15 @@
     </dependency> 
   </dependencies>  
   <build> 
-    <plugins> 
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.22.2</version>
+        <configuration>
+          <skipTests>true</skipTests>
+        </configuration>
+      </plugin> 
       <plugin> 
         <groupId>com.microsoft.azure</groupId>  
         <artifactId>azure-webapp-maven-plugin</artifactId>  
@@ -194,8 +202,8 @@
               <additionalProperties> 
                 <encoding.source>${project.build.sourceEncoding}</encoding.source>  
                 <encoding.reporting>${project.reporting.outputEncoding}</encoding.reporting>  
-                <java.source>${maven.compiler.source}</java.source>  
-                <java.target>${maven.compiler.target}</java.target> 
+                <java.source>1.8</java.source>  
+                <java.target>1.8</java.target> 
               </additionalProperties> 
             </configuration> 
           </execution> 
@@ -263,13 +271,13 @@
           <dependency> 
             <groupId>org.webjars</groupId>  
             <artifactId>bootstrap</artifactId>  
-            <version>${webjars-bootstrap.version}</version> 
+            <version>4.5.3</version> 
           </dependency>  
-          <dependency> 
-            <groupId>org.mockito</groupId>  
-            <artifactId>mockito-core</artifactId>  
-            <version>${mockito.version}</version> 
-          </dependency> 
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>3.6.28</version>
+        </dependency>
         </dependencies> 
       </plugin> 
     </plugins> 
