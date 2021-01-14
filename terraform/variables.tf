@@ -1,6 +1,6 @@
 variable "resource_group" {
   description = "The resource group"
-  default = "sCHANGE_ME_RESOURCE_GROUP"
+  default = "CHANGE_ME_RESOURCE_GROUP"
 }
 
 variable "application_name" {
