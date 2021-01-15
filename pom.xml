@@ -202,8 +202,8 @@
               <additionalProperties> 
                 <encoding.source>${project.build.sourceEncoding}</encoding.source>  
                 <encoding.reporting>${project.reporting.outputEncoding}</encoding.reporting>  
-                <java.source>1.8</java.source>  
-                <java.target>1.8</java.target> 
+                <java.source>{java.version}</java.source>  
+                <java.target>{java.version}</java.target> 
               </additionalProperties> 
             </configuration> 
           </execution> 
