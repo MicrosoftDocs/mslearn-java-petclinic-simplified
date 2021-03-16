@@ -1,0 +1,28 @@
+name: Provision Resources
+
+trigger: none
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+
+- task: TerraformTaskV1@0
+  inputs:
+    provider: 'azurerm'
+    command: 'init'
+    workingDirectory: $(Build.Repository.LocalPath)/terraform
+    backendServiceArm: $(serviceConnection)
+    backendAzureRmResourceGroupName: $(serviceConnection)
+    backendAzureRmStorageAccountName: $(serviceConnection)
+    backendAzureRmContainerName: 'tfstate'
+    backendAzureRmKey: 'tf/terraform.tfstate'
+
+- task: TerraformTaskV1@0
+  inputs:
+    provider: 'azurerm'
+    command: 'apply'
+    workingDirectory: $(Build.Repository.LocalPath)/terraform
+    backendAzureRmContainerName: 'tfstate'
+    backendAzureRmKey: 'tf/terraform.tfstate'
+    environmentServiceNameAzureRM: $(serviceConnection)
