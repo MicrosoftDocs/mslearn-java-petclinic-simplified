@@ -1,11 +1,11 @@
 variable "resource_group" {
   description = "The resource group"
-  default = "CHANGE_ME_RESOURCE_GROUP"
+  default = "ressourceGroup-Rachida"
 }
 
 variable "application_name" {
   description = "The Spring Boot application name"
-  default     = "CHANGE_ME_APP_NAME"
+  default     = "App_Rachida_Terraform"
 }
 
 variable "location" {
