@@ -1,6 +1,6 @@
 variable "resource_group" {
   description = "The resource group"
-  default = "terraform-GitHub-Actions"
+  default = "terraform-github-actions"
 }
 
 variable "application_name" {
