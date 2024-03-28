@@ -5,7 +5,7 @@ variable "resource_group" {
 
 variable "application_name" {
   description = "The Spring Boot application name"
-  default     = "snickerjp-GitHub-Actions-demo"
+  default     = "snickerjp-gh-actions-demo"
 }
 
 variable "location" {
